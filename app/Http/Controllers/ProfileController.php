@@ -34,9 +34,10 @@ class ProfileController extends Controller
         if ($request->new_password) {
             $user->password = Hash::make($request->new_password);
         }
-        
+
         $user->save();
 
         return redirect()->route('profile.show')->with('success', 'Profile updated successfully!');
     }
+
 }

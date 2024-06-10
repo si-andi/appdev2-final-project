@@ -123,7 +123,15 @@
                 {{ session('success') }}
             </div>
         @endif 
-        @csrf
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
         <form action="{{ route('profile.update') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-3">
@@ -145,6 +153,7 @@
             <button type="submit" class="btn btn-primary">Update Profile</button>
         </form>
     </div>
+
 
     <script>
         function fetchUserData() {
