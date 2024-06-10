@@ -49,6 +49,9 @@
         height: 100px;
         width: 140px;
     }
+    .art{
+        color: palevioletred;
+    }
 </style>
 
 <body>
@@ -56,7 +59,7 @@
 <div class="brand-title">
     <h class="title">
     <img class="logo" src="https://cdn.discordapp.com/attachments/963557193943240754/1249369315980087306/image-removebg-preview.png?ex=66670d59&is=6665bbd9&hm=55b5c46c8d927884f1777e85d0f1ffb97d4e3ff55d9748f37c247d79129aa8f8&">    </img>
-        Artography
+       <t class="art">Art</t>ography
     </h> 
 </div>
 
