@@ -19,7 +19,7 @@ use App\Http\Controllers\PhotoController;
 */
 
 Route::get('/', function () {
-    return view('login');
+    return view('starting');
 });
  
 Route::group(['middleware' => 'guest'], function () {

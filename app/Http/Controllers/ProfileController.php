@@ -21,7 +21,7 @@ class ProfileController extends Controller
 
         $request->validate([
             'name' => 'required|string|max:255',
-            'current_password' => 'required|string|min:8',
+            'current_password' => 'required|string|min:6',
             'new_password' => 'nullable|string|min:8|confirmed',
         ]);
 
