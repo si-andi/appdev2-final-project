@@ -7,6 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <style>
+        body {
+            background-image: url("https://cdn.discordapp.com/attachments/963557193943240754/1249672170892955699/josh-calabrese-XXpbdU_31Sg-unsplash-removebg-preview.png?ex=66682767&is=6666d5e7&hm=e59c5363da7fcaa7d1180142294291915ebed560d0432b7cca35c327c9a48aeb&");
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-color: #f8f9fa;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
         .logo-brand {
             color: black;
             padding: 8px;
@@ -17,13 +30,33 @@
             color: palevioletred;
         }
         .nav-link {
-            color: palevioletred;
+            color: black;
             font-size: 16px;
             font-weight: 400;
         }
-        .nav-item{
+        .nav-item {
             font-weight: 400;
             padding: 10px 15px 10px;
+        }
+        .message {
+            color: palevioletred;
+            font-size: 22px;
+        }
+        .welcome-message {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            height: 100%;
+            text-align: left;
+            padding-left: 110px;
+        }
+        .welcome {
+            font-size: 55px;
+            font-weight: bold;
+        }
+        .containers {
+            flex: 1;
         }
     </style>
 </head>
@@ -51,10 +84,11 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div>&nbsp;</div>
-        <h1> Welcome to Artography!</h1>
-        <div class="message">This is where arts meets the eye of photography for you to see its beauty.</div>
+    <div class="containers">
+        <div class="welcome-message">
+            <h1 class="welcome">Welcome to Artography!</h1>
+            <div class="message">This is where arts meets the eye of photography for you to see its beauty.</div>
+        </div>
     </div>
 </body>
 </html>
